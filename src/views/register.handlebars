@@ -1,0 +1,76 @@
+<main>
+  <section class="register-section">
+    <div class="container">
+      <div class="title-container">
+        <h1>Registro</h1>
+      </div>
+
+      <div>
+        <form action="/api/session/register" method="post" class="form">
+          <div class="form-field">
+            <label for="first_name" class="form-field_label">Nombre:</label>
+            <input
+              type="text"
+              name="first_name"
+              id="first_name"
+              placeholder="Ingresa tu nombre"
+              required
+              class="form-field_input"
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="last_name" class="form-field_label">Apellido:</label>
+            <input
+              type="text"
+              name="last_name"
+              id="last_name"
+              placeholder="Ingresa tu apellido"
+              required
+              class="form-field_input"
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="email" class="form-field_label">Correo electrónico:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Ingresa tu correo electrónico"
+              required
+              class="form-field_input"
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="age" class="form-field_label">Edad:</label>
+            <input
+              type="number"
+              name="age"
+              id="age"
+              placeholder="Ingresa tu edad"
+              min="0"
+              required
+              class="form-field_input"
+            />
+          </div>
+          <div class="form-field">
+            <label for="password" class="form-field_label">Contraseña:</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Ingresa tu contraseña"
+              required
+              class="form-field_input"
+            />
+          </div>
+          <div class="btn-container">
+            <button type="submit" class="submit-btn">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>

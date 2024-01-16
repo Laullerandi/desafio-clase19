@@ -1,0 +1,50 @@
+<main>
+  <section class="main-section">
+    <div class="container">
+      <div class="title-container">
+        <h1>¡Bienvenid@!</h1>
+      </div>
+
+      <div class="content-container">
+        <div class="user-container">
+          <div class="user-info_container">
+            <p>Nombre:</p>
+            <p>{{this.first_name}}</p>
+          </div>
+          <div class="user-info_container">
+            <p>Edad:</p>
+            <p>{{this.age}}</p>
+          </div>
+          <div class="user-info_container">
+            <p>Correo electrónico:</p>
+            <p>{{this.email}}</p>
+          </div>
+          <div class="user-info_container">
+            <p>Rol:</p>
+            <p>{{this.role}}</p>
+          </div>
+          <form action="/api/session/logout" method="get" class="form form-2">
+
+            <button type="submit" class="logout-btn">Cerrar sesión</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="product-container">
+        <div class="title-container">
+          <h2 class="title">Lista de productos</h2>
+        </div>
+        <div class="card-container">
+          {{#each products}}
+            <div class="product-card">
+              <h4 class="product-card_category">{{this.category}}</h4>
+              <h3 class="product-card_title">{{this.title}}</h3>
+              <p class="product-card_description">{{this.description}}</p>
+              <p class="product-card_price">$ {{this.price}}</p>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

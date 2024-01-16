@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  background-color: #3d3b8e;
+  color: #f9f9f9;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  user-select: none;
+  font-size: 2rem;
+  position: relative;
+  text-align: center;
+}
+
+.title:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 5px;
+  background-color: #43aa8b;
+  left: 0;
+  bottom: -5px;
+  transition: all 0.3s ease;
+}
+
+.title:hover:after {
+  width: 100%;
+}
+
+.login-section,
+.register-section,
+.main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 50%;
+}
+
+.container {
+  width: 100%;
+  background-color: #6883ba;
+  border-radius: 10px;
+  box-shadow: 10px 10px 49px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 10px 10px 49px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 10px 10px 49px 0px rgba(0, 0, 0, 0.5);
+  padding: 5rem;
+  margin: 5rem 0;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.text-container {
+  margin-top: 1.5rem;
+  text-align: right;
+}
+
+.text-container p a {
+  color: #f9f9f9;
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.text-container p a:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2.5px;
+  background-color: #43aa8b;
+  left: 0;
+  bottom: -5px;
+  transition: all 0.3s ease;
+}
+
+.text-container p a:hover:after {
+  width: 100%;
+}
+
+.form, .content-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.form-2 {
+  margin: 0;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.form-field_label {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.form-field_input {
+  background-color: #f9f9f9;
+  border: none;
+  border-radius: 5px;
+  color: #363732;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  min-height: 3rem;
+  padding-left: 0.5rem;
+}
+
+.user-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.user-info_container {
+  display: flex;
+  gap: 0.25rem;
+  user-select: none;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  max-width: 100%;
+}
+
+.product-card {
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  color: #363732;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  width: 50%;
+  transition: all 0.5s ease;
+  box-shadow: 10px 10px 49px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 10px 10px 49px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 10px 10px 49px 0px rgba(0, 0, 0, 0.25);
+}
+
+.product-card:hover {
+  transform: scale(1.1);
+}
+
+.product-card_category {
+  font-size: 1rem;
+}
+
+.product-card_title {
+  font-size: 1.5rem;
+}
+
+.product-card_description {
+  font-size: 0.8rem;
+}
+
+.product-card_price {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.btn-container {
+  margin: 2rem 0;
+}
+
+.submit-btn, .add-btn {
+  background-color: #363732;
+  border: none;
+  border-radius: 5px;
+  color: #f9f9f9;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover, .add-btn:hover {
+  color: #43aa8b;
+}
+
+.logout-btn {
+  background-color: #363732;
+  border: none;
+  border-radius: 5px;
+  color: #f9f9f9;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  color: #EF3054;
+}
